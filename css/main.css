@@ -1,3 +1,379 @@
-/*
- * Estilos de tu proyecto
- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.dark-container {
+  background-color: #313E52;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 12.5%;
+}
+
+.title {
+  font-size: 1.5em;
+  line-height: 2.25em;
+}
+
+.menu {
+  font-size: 0.9em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-item {
+  margin: 0 5%;
+}
+
+.menu-item:hover {
+  color: #18bc9c;
+  ;
+  cursor: pointer;
+}
+
+.welcome {
+  background-color: #18bc9c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-profile {
+  display: flex;
+  padding: 100px 0 10px 0;
+  align-self: center;
+  width: 35%;
+}
+
+h1 {
+  border-top: 10px;
+  font-size: 70px;
+  border-left-width: 6px;
+  letter-spacing: -3px;
+  font-weight: 800;
+  padding-top: 18px;
+}
+
+.icons {
+  width: 40px;
+  margin: 5px auto;
+  position: relative;
+}
+
+.light {
+  padding: 0px 7px 10px 7px;
+  background-color: #18bc9c;
+  color: #FFF;
+  font-size: 26px;
+}
+
+.light::after {
+  content: "";
+  width: 90px;
+  height: 5px;
+  background-color: #FFF;
+  position: absolute;
+  top: 40%;
+  right: 42px;
+}
+
+.light::before {
+  content: "";
+  width: 90px;
+  height: 5px;
+  background-color: #FFF;
+  position: absolute;
+  top: 40%;
+  left: 42px;
+}
+
+.dark::before {
+  content: "";
+  width: 90px;
+  height: 5px;
+  background-color: #313E52;
+  position: absolute;
+  top: 40%;
+  left: 42px;
+}
+
+.dark::after {
+  content: "";
+  width: 90px;
+  height: 5px;
+  background-color: #313E52;
+  position: absolute;
+  top: 40%;
+  right: 42px;
+}
+
+.text-container {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  padding-top: 26px;
+  padding-bottom: 95px;
+}
+
+.portfolio {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 40px;
+  padding-top: 95px;
+}
+
+.dark {
+  color: black;
+  padding: 0px 7px;
+  font-size: 26px;
+}
+
+.images-portfolio {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-flow: row wrap;
+  width: 80%;
+  padding-top: 0px;
+  padding-bottom: 110px;
+}
+
+.images-portfolio-item {
+  width: 30%;
+  height: 25%;
+  margin: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.about {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #18bc9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 40px;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.about h2 {
+  font-size: 1.2em;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+.about p {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 20px;
+  padding: 0 50px;
+}
+
+.about span {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.button {
+  background-color: #18bc9c;
+  margin-top: 60px;
+  color: white;
+  border: 2px;
+  border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.fas fa-download {
+  color: white;
+}
+
+.button:hover {
+  background-color: white;
+  color: #18bc9c;
+  cursor: pointer;
+  border-color: #009576;
+}
+
+.text-about {
+  display: flex;
+  width: 65%;
+  padding-top: 10px;
+}
+
+.contact {
+  padding-bottom: 110px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-contact {
+  font-size: 40px;
+  padding-top: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.form-config {
+  font-size: 1.5em;
+  line-height: 3.5em;
+  width: 60%
+}
+
+.form-config button:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #313E52;
+}
+
+.input {
+  border: 1px solid #e9ecef;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  color: #6C757D;
+}
+
+.input:active,
+.input:focus {
+  border: 2px solid #18bc9c;
+}
+
+textarea {
+  resize: none;
+}
+
+.send-btn {
+  background-color: #18bc9c;
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  align-self: flex-start;
+  cursor: pointer;
+  margin-top: 1%;
+}
+
+footer {
+  background-color: #313E52;
+  color: white;
+}
+
+.end-container {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  line-height: 115px;
+  text-align: center;
+  padding-top: 3.5em;
+  padding-bottom: 1em;
+}
+
+.identity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  width: 30%;
+}
+
+.footer-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.register {
+  padding-top: 50px;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #009576;
+  text-decoration: underline;
+}
+
+.identity h3 {
+  padding-bottom: 8%;
+}
+
+.list-contact i {
+  width: 46px;
+  height: 45px;
+  margin-left: 0px;
+  margin-right: 4px;
+  padding: 8px;
+  color: #FFF;
+  font-size: 16px;
+  list-style: none;
+  border: 2px solid #FFF;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.list-contact i:hover {
+  color: #18BC9C;
+  border: 2px solid #18BC9C;
+  cursor: pointer;
+}
+
+.fab:hover {
+  color: #18BC9C;
+}
